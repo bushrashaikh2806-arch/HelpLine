@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-main: #FFFFFF;
+    --bg-soft: #F6F1E4;
+    --bg-card: #FFFFFF;
+    --text-main: #3B3426;
+    --text-muted: #6F6954;
+    --border-main: #E6DCC3;
+    --khaki-main: #C3B091;
+    --khaki-deep: #8A7545;
+    --emergency-red: #B3261E;
+  }
+
+  .dark {
+    --bg-main: #1E1A12;
+    --bg-soft: #231E15;
+    --bg-card: #2A251A;
+    --text-main: #F3EDDC;
+    --text-muted: #BDB59C;
+    --border-main: #4A4230;
+    --khaki-main: #C3B091;
+    --khaki-deep: #C3B091;
+    --emergency-red: #E0352B;
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #C3B09180;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #8A7545;
+  }
+}
+
+@layer utilities {
+  .police-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-main);
+    border-radius: 0.875rem;
+    box-shadow: 0 2px 8px -2px rgba(59, 52, 38, 0.05);
+    transition: all 0.2s ease-in-out;
+  }
+  .police-card:hover {
+    box-shadow: 0 8px 24px -4px rgba(59, 52, 38, 0.08);
+  }
+  .dark .police-card:hover {
+    box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.4);
+  }
+}

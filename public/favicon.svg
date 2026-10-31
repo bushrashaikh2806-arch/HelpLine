@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Outer Deep Khaki Shield -->
+  <path d="M32 4L10 14V30C10 44 20 54 32 60C44 54 54 44 54 30V14L32 4Z" fill="#8A7545" stroke="#6C5B34" stroke-width="1.5" />
+  <!-- Inner Light Khaki Outline -->
+  <path d="M32 8L14 16.5V29C14 41 22 49.5 32 55C42 49.5 50 41 50 29V16.5L32 8Z" stroke="#C3B091" stroke-width="1.5" stroke-dasharray="2 1" />
+  <!-- Star at top inside -->
+  <polygon points="32,12 33.8,16.5 38.5,16.8 35,19.8 36.2,24.5 32,22 27.8,24.5 29,19.8 25.5,16.8 30.2,16.5" fill="#C3B091" />
+  <!-- White Headset -->
+  <path d="M22 34C22 28.4772 26.4772 24 32 24C37.5228 24 42 28.4772 42 34" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" />
+  <!-- Ear cups -->
+  <rect x="19" y="32" width="4" height="9" rx="2" fill="#FFFFFF" />
+  <rect x="41" y="32" width="4" height="9" rx="2" fill="#FFFFFF" />
+  <!-- Mic arm -->
+  <path d="M41 38C41 42 37 44 33 44H31" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+  <circle cx="29" cy="44" r="1.8" fill="#C3B091" />
+</svg>
